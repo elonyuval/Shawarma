@@ -22,11 +22,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      # enablement: true מדליק את GitHub Pages בעצמו בפעם הראשונה,
-      # במקום לדרוש הפעלה ידנית ב-Settings
+      # דרישה חד-פעמית: להדליק Pages ידנית ב-
+      #   Settings -> Pages -> Source: GitHub Actions
+      # ניסינו enablement: true, אבל ה-GITHUB_TOKEN של Actions לא מורשה
+      # ליצור אתר Pages ("Resource not accessible by integration") —
+      # יצירה ראשונית דורשת הרשאת אדמין של בעל הריפו.
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
