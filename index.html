@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4E8D5">
+
+<title>שווארמה עיוני נתניה | שווארמה גריל באזור התעשייה</title>
+<meta name="description" content="שווארמה עיוני, שדרות גיבורי ישראל 14 באזור התעשייה בנתניה. שווארמה, פרגית, שניצל וחזה עוף — בפיתה, לאפה, בגט או צלחת. כשר. פתוח א׳–ה׳ 07:30–19:30. טלפון 09-885-8804.">
+<link rel="canonical" href="https://example.com/"><!-- PLACEHOLDER: כתובת הדומיין הסופית -->
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="שווארמה עיוני">
+<meta property="og:title" content="שווארמה עיוני נתניה">
+<meta property="og:description" content="שווארמה כמו ששווארמה צריכה להיות. שדרות גיבורי ישראל 14, אזור התעשייה נתניה. כשר.">
+<meta property="og:url" content="https://example.com/"><!-- PLACEHOLDER -->
+<meta property="og:image" content="images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="IL">
+<meta name="geo.placename" content="נתניה">
+
+<link rel="icon" href="images/favicon.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&family=Karantina:wght@400;700&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="top">
+
+<a class="skip-link" href="#main">דילוג לתוכן הראשי</a>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+
+    <!-- הלוגו: ברגע ש־/images/logo.png קיים הוא מחליף את הנקודה הכתומה אוטומטית -->
+    <a class="logo" href="#top" aria-label="עיוני — לראש הדף">
+      <span class="logo-badge" data-img-slot aria-hidden="true">
+        <img src="images/logo-mark.png" alt="" width="44" height="44" decoding="async">
+      </span>
+      <span class="logo-text">עיוני</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="ניווט ראשי">
+      <ul role="list" data-render="nav"></ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" data-bind-attr="href:links.order" href="#visit">להזמנה</a>
+      <button class="burger" id="burger" aria-label="פתיחת תפריט" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<!-- תפריט מובייל -->
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <nav aria-label="ניווט מובייל">
+    <ul role="list" data-render="nav-mobile"></ul>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a class="btn btn-primary btn-block" data-bind-attr="href:links.order" href="#visit">להזמנה</a>
+    <a class="btn btn-ghost btn-block" data-bind-attr="href:links.waze" href="#visit">איך מגיעים</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero" aria-labelledby="hero-title">
+
+    <div class="hero-media" id="heroMedia">
+      <!-- החלפת התמונה: להעלות קובץ ל־/images/hero.jpg -->
+      <figure class="ph ph-hero">
+        <img src="images/hero.jpg" alt="שווארמה על השיפוד בעיוני נתניה" fetchpriority="high" decoding="async">
+        <figcaption class="ph-label">/images/hero.jpg</figcaption>
+      </figure>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-embers" aria-hidden="true"></div>
+
+      <!-- גלגל השווארמה כסימן מים דהוי -->
+      <div class="spit-mark" aria-hidden="true"></div>
+
+      <!-- להבות עולות ונעלמות. דקורטיבי בלבד, נכבה ב-prefers-reduced-motion -->
+      <div class="flames" aria-hidden="true">
+        <span class="flame f1"></span><span class="flame f2"></span>
+        <span class="flame f3"></span><span class="flame f4"></span>
+        <span class="flame f5"></span>
+      </div>
+    </div>
+
+    <div class="wrap hero-content" id="heroContent">
+      <p class="hero-kicker">
+        <span class="dot" aria-hidden="true"></span>
+        <span data-bind="hero.kicker">שווארמייה באזור התעשייה בנתניה · כשר</span>
+      </p>
+
+      <h1 class="hero-title" id="hero-title">עיוני<span class="period">.</span></h1>
+
+      <p class="hero-sub" data-bind="hero.sub">שווארמה כמו ששווארמה צריכה להיות.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#food">מה אוכלים</a>
+        <a class="btn btn-ghost" data-bind-attr="href:links.waze" href="#visit">איך מגיעים</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════ MARQUEE ══════════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" data-render="marquee"></div>
+  </div>
+
+  <!-- ══════════════════ FOOD SHOWCASE ══════════════════ -->
+  <section class="section food" id="food" aria-labelledby="food-title">
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">התפריט</span>
+        <h2 class="section-title" id="food-title">מה בא לך היום?</h2>
+      </header>
+
+      <div class="food-grid" data-render="dishes"></div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════ איך בא לך את זה? + תוספות ══════════════════ -->
+  <section class="section serve" id="styles" aria-labelledby="styles-title">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <span class="eyebrow">הלחם</span>
+        <h2 class="section-title" id="styles-title">איך בא לך את זה?</h2>
+      </header>
+
+      <ul class="style-list reveal" role="list" data-render="serveStyles"></ul>
+
+      <div class="extras-inline reveal">
+        <h3 class="extras-title">וכל מה שמסביב</h3>
+        <ul class="extras-list" role="list" data-render="extras"></ul>
+        <p class="extras-note" data-bind="extrasNote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ פיתה או לאפה? ══════════════════ -->
+  <section class="section-flush versus" id="versus" aria-labelledby="versus-title">
+    <h2 class="visually-hidden" id="versus-title">פיתה או לאפה?</h2>
+
+    <div class="versus-head">
+      <p class="versus-question">פיתה או לאפה?</p>
+    </div>
+
+    <div class="versus-wrap" id="versusWrap">
+      <button class="versus-side" data-choice="pita" type="button" aria-pressed="false">
+        <span class="versus-bg" aria-hidden="true"></span>
+        <span class="versus-label">פיתה</span>
+        <span class="versus-sub">קלאסי. אין מה לחפש.</span>
+      </button>
+
+      <span class="versus-vs" aria-hidden="true">VS</span>
+
+      <button class="versus-side" data-choice="laffa" type="button" aria-pressed="false">
+        <span class="versus-bg" aria-hidden="true"></span>
+        <span class="versus-label">לאפה</span>
+        <span class="versus-sub">כשבאים ברעב אמיתי.</span>
+      </button>
+    </div>
+
+    <p class="versus-result" id="versusResult" role="status" aria-live="polite"></p>
+  </section>
+
+  <!-- ══════════════════ ביקורות ══════════════════ -->
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="flames flames-soft" aria-hidden="true">
+      <span class="flame f2"></span><span class="flame f4"></span><span class="flame f5"></span>
+    </div>
+    <div class="spit-mark spit-mark--left" aria-hidden="true"></div>
+    <div class="wrap">
+      <header class="section-head reveal">
+        <span class="eyebrow">מה אומרים</span>
+        <h2 class="section-title" id="reviews-title">מה שחוזר בביקורות.</h2>
+      </header>
+
+      <div class="review-list" data-render="reviews"></div>
+
+      <div class="rating-bar reveal">
+        <!-- הדירוג מוצג רק אחרי שממלאים rating ב-data.js -->
+        <div class="rating-score" id="ratingScore" hidden>
+          <span class="rating-num" data-bind="rating.score"></span>
+          <span class="rating-stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-meta"><span data-bind="rating.count"></span> ביקורות</span>
+        </div>
+        <p class="rating-note" data-bind="reviewsNote"></p>
+        <a class="btn btn-ghost btn-sm" id="reviewsLink" data-bind-attr="href:links.reviews" href="#">
+          לקרוא את הביקורות
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ על עיוני ══════════════════ -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+
+      <div class="about-text reveal">
+        <span class="eyebrow">על עיוני</span>
+        <h2 class="section-title" id="about-title" data-bind="about.title">פשוט עושים שווארמה כמו שצריך.</h2>
+        <div class="about-body" data-render="about-paragraphs"></div>
+        <ul class="about-facts" role="list">
+          <li><strong data-bind="brand.kosher">כשר · בשרי</strong><span data-bind="brand.kosherAuthority"></span></li>
+          <li><strong>נתניה</strong><span data-bind="contact.addressLine"></span></li>
+          <li><strong>פתוח מ־07:30</strong><span>ראשון עד שישי</span></li>
+        </ul>
+      </div>
+
+      <div class="about-media reveal">
+        <!-- החלפת התמונה: /images/about.jpg -->
+        <figure class="ph ph-portrait">
+          <img src="images/about.jpg" alt="השיפוד של עיוני" loading="lazy" decoding="async">
+          <figcaption class="ph-label">/images/about.jpg</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════ גלריה ══════════════════ -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <span class="eyebrow">גלריה</span>
+        <h2 class="section-title" id="gallery-title">איך זה נראה אצלנו</h2>
+      </header>
+      <div class="gallery-grid" data-render="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ מידע שימושי ══════════════════ -->
+  <section class="section visit" id="visit" aria-labelledby="visit-title">
+    <div class="flames flames-soft" aria-hidden="true">
+      <span class="flame f1"></span><span class="flame f3"></span><span class="flame f5"></span>
+    </div>
+    <div class="spit-mark spit-mark--left" aria-hidden="true"></div>
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">איפה אנחנו</span>
+        <h2 class="section-title" id="visit-title">רעבים? אנחנו מחכים לכם.</h2>
+      </header>
+
+      <div class="visit-grid">
+
+        <div class="visit-panel reveal">
+
+          <dl class="facts">
+            <div class="fact">
+              <dt>כתובת</dt>
+              <dd>
+                <span data-bind="contact.addressLine"></span>,
+                <span data-bind="contact.addressArea"></span>,
+                <span data-bind="contact.addressCity">נתניה</span>
+              </dd>
+            </div>
+
+            <div class="fact">
+              <dt>טלפון</dt>
+              <dd>
+                <a class="link-underline phone" data-bind-attr="href:contact.phoneTel"
+                   data-bind="contact.phoneDisplay" href="#"></a>
+              </dd>
+            </div>
+
+            <div class="fact fact-wide">
+              <dt>שעות</dt>
+              <dd>
+                <ul class="hours-list" role="list" data-render="hours"></ul>
+                <p class="info-note" data-bind="hoursNote"></p>
+              </dd>
+            </div>
+
+            <div class="fact fact-wide">
+              <dt>כשרות</dt>
+              <dd>
+                <strong data-bind="brand.kosher">כשר · בשרי</strong>
+                <span class="info-note" data-bind="brand.kosherAuthority"></span>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="visit-actions" id="order">
+            <a class="btn btn-primary" data-bind-attr="href:contact.phoneTel" href="#">להתקשר ולהזמין</a>
+            <a class="btn btn-ghost btn-sm" data-bind-attr="href:links.waze" href="#">Waze</a>
+            <a class="btn btn-ghost btn-sm" data-bind-attr="href:links.googleMaps" href="#">Google Maps</a>
+            <a class="btn btn-ghost btn-sm" data-bind-attr="href:links.transit" data-hide-if-empty href="#">תחבורה ציבורית</a>
+            <a class="btn btn-ghost btn-sm" data-bind-attr="href:links.order" data-hide-if-empty
+               data-bind="links.orderLabel" href="#">הזמנה אונליין</a>
+          </div>
+
+        </div>
+
+        <div class="visit-map reveal" id="mapSlot">
+          <!-- מפה: להדביק את קישור ה־embed בשדה mapEmbedSrc בקובץ data.js -->
+          <div class="ph ph-map">
+            <span class="ph-label">[מפה — להדביק Google Maps embed ב־data.js]</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+
+    <div class="footer-brand">
+      <span class="footer-lockup" data-img-slot>
+        <img src="images/logo.png" alt="עיוני — שווארמה גריל" width="640" height="644"
+             loading="lazy" decoding="async">
+        <span class="logo-text footer-logo">עיוני<span class="period">.</span></span>
+      </span>
+      <p class="footer-tag">שווארמה כמו ששווארמה צריכה להיות.</p>
+      <p class="footer-kosher" data-bind="brand.kosher">כשר · בשרי</p>
+    </div>
+
+    <nav class="footer-col" aria-label="ניווט תחתון">
+      <h2 class="footer-head">ניווט</h2>
+      <ul role="list" data-render="nav-footer"></ul>
+    </nav>
+
+    <div class="footer-col">
+      <h2 class="footer-head">פרטים</h2>
+      <ul role="list">
+        <li><a class="link-underline" data-bind-attr="href:contact.phoneTel" data-bind="contact.phoneDisplay" href="#">[מספר טלפון]</a></li>
+        <li><span data-bind="contact.addressLine"></span>, <span data-bind="contact.addressArea"></span>, <span data-bind="contact.addressCity"></span></li>
+        <li data-render="hours-short"></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h2 class="footer-head">קישורים</h2>
+      <ul class="footer-links" role="list" data-render="social"></ul>
+    </div>
+
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>© <span id="year">2026</span> שווארמה עיוני, נתניה. כל הזכויות שמורות.</p>
+    <p class="credit"><a class="link-underline" href="#top">חזרה למעלה</a></p>
+  </div>
+</footer>
+
+<!-- ══════════════════ MOBILE ACTION BAR ══════════════════ -->
+<nav class="action-bar" aria-label="פעולות מהירות">
+  <a class="action" data-bind-attr="href:links.order" href="#visit">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.2 12.1a2 2 0 0 1-2 1.9H7.2a2 2 0 0 1-2-1.9L4 7Z"/><path d="M9 7V5.5a3 3 0 0 1 6 0V7"/></svg>
+    <span>הזמנה</span>
+  </a>
+  <a class="action" data-bind-attr="href:links.waze" href="#visit">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+    <span>ניווט</span>
+  </a>
+  <a class="action" data-bind-attr="href:contact.phoneTel" href="#visit">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg>
+    <span>התקשרו</span>
+  </a>
+</nav>
+
+<!-- ══════════════════ Structured Data ══════════════════
+     נבנה דינמית מ־data.js כדי שהפרטים יישארו במקום אחד. -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
